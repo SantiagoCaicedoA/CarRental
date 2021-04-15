@@ -1,0 +1,153 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    background-color:#169a5a;
+    padding: 20px 0;
+}
+.navContainer img{
+    height: 50px;
+    margin-left: 50px;
+    margin-right: 20px
+}
+#logo{
+    font-family: 'Train One', cursive;
+    background: #f3f3f3;
+    margin-top: 5px;
+    color:#169a5a;
+    border-radius: 10px;
+    padding: 0 5px;
+    padding-top: 10px;
+}
+.navContainer{
+    margin: auto;
+    display: flex;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    margin-left: 50%;
+}
+li{
+    margin-right: 50px;
+    list-style-type: none;
+    color: white;
+}
+a{
+    display: flex;
+}
+.container{
+    background: #f3f3f3;
+    width: 30%;
+    margin: auto;
+    padding:80px 20px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#goToForm{
+    background: #169a5a;
+    border-radius:5px;
+    border: none;
+    color: white;
+    padding: 10px;
+}
+#goToForm:hover{
+    cursor: pointer;
+    font-size: 101%;
+}
+
+footer{
+    margin-top: 100px;
+    padding: 30px 0;
+    background: #169a5a;
+    text-align: center;
+    color:white;
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/*Form*/
+
+.searchForm{
+    padding-top: 5px;
+}
+input {
+    width: 90%;
+}
+#clients {
+    margin-top: 110px;
+    background: white;
+    overflow: scroll;
+    height: 200px;
+    margin: auto;
+    text-align: left;
+    width: 90%;
+    text-align: left;
+}
+
+#clients li{
+    color: black;
+    font-size: 15px;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+#clients ul{
+    width: 100%;
+    margin: 0;
+}
+
+.even{
+    background-color: rgb(189, 186, 186);
+}
+
+.hidden{
+    display: none;
+}
+
+.bigContainer{
+    display: flex;
+}
+
+form{
+    margin-left:1000px;
+}
+
+.formInput{
+    display: flex;
+    margin-bottom: 30px;
+}
+.formInput input{
+    width: 50%;
+    margin-left: auto;
+}
+
+
+#imgContainer img{
+    height: auto;
+    width: 100%;
+}
+
+#imgContainer {
+    display: block;
+}
+h1{
+    text-align: center;
+}
+.labelLeft{
+    margin-right: 10%;
+}
+.radio{
+    display: flex;
+    margin-bottom: 40px;
+}

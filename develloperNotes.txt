@@ -1,0 +1,8 @@
+001 Here is where I learned how to display the seconds and update them every second      
+    https://stackoverflow.com/questions/26584233/updating-javascript-time-every-second
+
+002 here is where I learned how to make a scrollable box
+    https://www.quackit.com/html/codes/html_scroll_box.cfm
+
+003 here is where I learned how to change the readonly attribute with javascript
+    https://www.w3schools.com/jsref/prop_text_readonly.asp

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Train+One&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <title>Car Rental</title>
+</head>
+
+<body onload="loadJSON()">
+    <header>
+        <div class="nav">
+            <div class="navContainer">
+                <a href="./index.html">
+                    <img src="./img/logo.png" alt="car logo">
+                    <div id="logo">Rental car</div>
+                </a>
+                <ul id="myUL">
+                    <li>Cars</li>
+                    <li>Prices</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <h1>Please first select a customer to start the proccess</h1>
+    <div class="bigContainer">
+        <div class="container searchForm">
+            <h3>Please start typing to see the customers</h3>
+            <p id="date"></p>
+            <input type="text" id="userInput" onkeyup="insertClients(this.value)" placeholder="Search a client">
+            <div id="clients" class="hidden"></div>
+        </div>
+        <form action="" method="get"  class="container" id="formContainer">
+            <h1>Reservation</h1>
+            <div class="formInput">
+                <label for="firstName">First name</label>
+                <input type="text" name="" id="firstName" readonly>
+            </div>
+            <div class="formInput">
+                <label for="lastName">Last name</label>
+                <input type="text" name="" id="lastName" readonly>
+            </div>
+            <div class="formInput">
+                <label for="address">Address</label>
+                <input type="text" name="" id="adress" readonly>
+            </div>
+            <div class="formInput">
+                <label for="stateProv">Providence</label>
+                <input type="text" name="" id="stateProv" readonly>
+            </div>
+            <div class="formInput">
+                <label for="email">Email</label>
+                <input type="text" name="" id="email" readonly>
+            </div>
+            <div class="formInput">
+                <label for="phone">Phone</label>
+                <input type="text" name="" id="phone" readonly>
+            </div>
+            <div class="formInput">
+                <label for="daysRented">Days for Rent</label>
+                <input type="number" min="1" max="30" name="" id="daysRented" readonly placeholder="Max 30 days" onkeyup="showImg()">
+            </div>
+            <div class=" radio" id="formRadio">
+
+            </div>
+            <div class=" radio" id="extras">
+
+            </div>
+
+        </form>
+        <div class="container" id="imgContainer">
+            
+        </div>
+    </div>
+    <footer>
+        <div class="info">
+
+            <h3>Where to find us?</h3>
+            <div class="social-media">
+                <a href="#" class="fa fa-facebook"> Rental Car</a><br>
+                <a href="#" class="fa fa-youtube"> Rental Car Channel</a><br>
+                <a href="#" class="fa fa-instagram"> @RentalCar</a><br>
+            </div>
+            <span>rentalcar@hotmail.com</span><br>
+            <br>
+            <span>+1(403)123-1234</span>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
