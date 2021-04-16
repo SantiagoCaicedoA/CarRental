@@ -44,7 +44,7 @@ const insertClients = (input) => {
                 var evenOdd = (rowCount % 2 == 0) ? "even" : "odd";
                 htmlFragment += `
                 <ul class="${evenOdd}">
-                    <li id="li" value="${i}" onclick="clientClicked()">${obj.first_name} ${obj.last_name}</li>
+                    <li id="li" onclick="clientClicked(${i})">${obj.first_name} ${obj.last_name}</li>
                 </ul>
                 `
                 rowCount++
@@ -72,9 +72,8 @@ function toggleElementClass(id, className, force) {
 	return element;
 }
 
-var clientClicked = () => {
-    var idx = document.getElementById("li").getAttribute("value")
-
+function clientClicked (idx) {
+    // var idx = document.getElementById("li").getAttribute("value")
 
     document.getElementById("firstName").value = dataSet[idx].first_name
     document.getElementById("lastName").value = dataSet[idx].last_name
