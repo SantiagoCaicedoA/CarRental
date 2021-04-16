@@ -73,7 +73,6 @@ function toggleElementClass(id, className, force) {
 }
 
 function clientClicked (idx) {
-    // var idx = document.getElementById("li").getAttribute("value")
 
     document.getElementById("firstName").value = dataSet[idx].first_name
     document.getElementById("lastName").value = dataSet[idx].last_name
